@@ -1,6 +1,6 @@
 # 🖋️ MyInk - Logiciel de Création de Livres Interactifs
 
-**MyInk** est un logiciel desktop conçu pour l'édition et la gestion de "Livres Dont Vous Êtes le Héros" (LDVH). Ce projet, réalisé dans le cadre de l'UE Projet-Tutoré de la L2 Informatique, propose un environnement complet allant de la modélisation de graphes narratifs à l'exportation interactive.
+**MyInk** est un logiciel desktop conçu pour l'édition et la gestion de "Livres Dont Vous Êtes le Héros" (LDVH). Ce projet, réalisé dans le cadre de l'UE Projet-Tutoré de la L2 Informatique, propose un environnement complet allant de la modélisation de graphes interactifs à l'exportation interactive.
 
 ---
 
@@ -10,7 +10,7 @@
 
 L'application MyInk répond aux exigences strictes définies dans le cahier des charges pour offrir une expérience de création narrative complète et sans faille technique.
 
-### 🖋️ Édition et Création Narrative
+### 🖋️ Édition et Création Interactive
 * **Modélisation par Graphes** : Système de création de pages (`PageNode`) interconnectées par des liens directionnels (`PageLink`). Chaque nœud représente une unité narrative isolée avec son propre état.
 * **Éditeur de Texte Riche (Rich Text)** : Intégration d'un module d'édition avancée permettant la mise en forme dynamique (styles, couleurs, polices) via *RichTextFX*. Les données sont persistées pour conserver l'intégrité visuelle du récit.
 * **Arborescence de Projet** : Organisation hiérarchique des fichiers permettant la gestion multi-projets, avec séparation claire entre les assets (images, sons) et la structure logique.
