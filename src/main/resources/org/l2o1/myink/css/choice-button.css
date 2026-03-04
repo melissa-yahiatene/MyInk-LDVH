@@ -1,0 +1,16 @@
+.button-pane {
+    -fx-background-color: #724BF6;
+}
+
+.button-pane:hover {
+    -fx-background-color: #5C3CCA;
+}
+
+.disabled {
+    -fx-background-color: #CDC1F4;
+}
+
+.disabled:hover {
+    -fx-background-color: #CDC1F4;
+    -fx-cursor: default;
+}

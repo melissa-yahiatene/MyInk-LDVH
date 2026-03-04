@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="appPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.l2o1.myink.view.ReadingView">
+    <children>
+        <Pane prefHeight="50.0" prefWidth="1200.0" style="-fx-background-color: #1C1C2B;">
+         <children>
+            <Pane layoutX="20.0" layoutY="5.0" onMouseClicked="#goMenu" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #3F3F58; -fx-background-radius: 15;">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/home-icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="50.0" prefHeight="40.0" prefWidth="100.0" style="-fx-text-fill: #C19A6B;" text="Menu Principal">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Pane>
+            <Pane layoutX="475.0" layoutY="5.0" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #3F3F58; -fx-background-radius: 15;">
+               <children>
+                  <Label fx:id="titleLabel" alignment="CENTER" prefHeight="40.0" prefWidth="250.0" style="-fx-text-fill: #C19A6B;" text="Titre du livre">
+                     <font>
+                        <Font name="Arial Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Pane>
+            <Pane layoutX="970.0" layoutY="5.0" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: #3F3F58; -fx-background-radius: 15;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <ImageView fx:id="redKeyImage" fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="5.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/keys/red-key.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="blueKeyImage" fitHeight="30.0" fitWidth="30.0" layoutX="50.0" layoutY="5.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/keys/blue-key.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="greenKeyImage" fitHeight="30.0" fitWidth="30.0" layoutX="90.0" layoutY="5.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/keys/green-key.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="pinkKeyImage" fitHeight="30.0" fitWidth="30.0" layoutX="130.0" layoutY="5.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/keys/pink-key.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="yellowKeyImage" fitHeight="30.0" fitWidth="30.0" layoutX="170.0" layoutY="5.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/general/keys/yellow-key.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+        </Pane>
+      <BorderPane layoutY="50.0" prefHeight="750.0" prefWidth="1200.0">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F5F1E6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="pageContainer" layoutX="152.0" layoutY="25.0" prefHeight="700.0" prefWidth="497.0" style="-fx-background-color: #FFFFFF;">
+
+                  </Pane>
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: F5F1E6;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: F5F1E6;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="nextPage" onMouseClicked="#goNextPage" alignment="CENTER" layoutY="300.0" prefHeight="150.0" prefWidth="200.0" style="-fx-text-fill: #3F3F58FF;  -fx-font-size: 105.0; -fx-font-family:'Arial'; " text="&gt;" >
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+    </children>
+</Pane>

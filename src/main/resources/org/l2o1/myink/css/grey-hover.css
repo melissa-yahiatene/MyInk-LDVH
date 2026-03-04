@@ -1,0 +1,7 @@
+.hover-item:hover {
+    -fx-background-color: #eae9e7;
+}
+
+.selected {
+    -fx-background-color: #E5E4E2;
+}
